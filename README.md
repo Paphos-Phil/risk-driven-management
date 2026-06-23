@@ -1,29 +1,27 @@
-# Risk-Driven Management (RDM) — Canonical Reference
+# RDM v3.00 Website Update Pack
 
-This repository hosts the canonical public landing page for **Risk-Driven Management (RDM)**.
+This pack contains website-ready HTML snippets for updating the Risk-Driven Management website to reflect the publication of:
 
-It exists solely to provide a stable, authoritative web reference that points to the foundational publication archived on Zenodo and to establish provenance, authorship, and scope.
+**Risk-Driven Management (RDM) Framework Master Document — Version 3.00 Canonical Reference Edition**
 
-## Canonical publication (prior art)
+DOI: https://doi.org/10.5281/zenodo.20810447
 
-The foundational paper defining the scope and positioning of Risk-Driven Management (RDM) is published on Zenodo:
+## Files
 
-**DOI:** https://doi.org/10.5281/zenodo.18315017
+- `index_update.html` — replacement / insert text for the website home page.
+- `framework_page.html` — content for the framework/download page.
+- `version_history.html` — version history section/page.
+- `release_announcement.html` — dated news/release announcement.
+- `footer_legal_notice.html` — recommended footer/legal wording.
 
-That DOI is the authoritative, time-stamped archival record.
+## Notes
 
-## Scope and boundaries
+The DOI link is written as:
 
-This repository does **not** contain the RDM framework, its formal definitions, decision logic, or operational methods.
+`https://doi.org/10.5281/zenodo.20810447`
 
-The associated website and this repository are intentionally non-operational and non-instructional. Applied materials are managed separately and may be made available under controlled or contractual contexts.
+The chosen rights wording is:
 
-## Contents
+`Copyright © Philip Linnell 2026. Licensed to Risk-Driven Management Ltd. All rights reserved.`
 
-- `index.html` — Canonical public landing page for Risk-Driven Management (RDM)
-
-## Ownership
-
-Risk-Driven Management (RDM) is an original management framework developed by **Philip Linnell**.
-
-© Philip Linnell. All rights reserved.
+After committing these files or merging the snippets into the live pages, check the public website and confirm that all older v2.00 references have either been removed or clearly labelled as superseded.

@@ -1,105 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Risk-Driven Management (RDM) — Canonical Reference</title>
-  <meta name="description" content="Official canonical reference page for Risk-Driven Management (RDM), including the Framework Master Document, Zenodo DOI, SHA-256 verification, UK trade mark application and contact details." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://risk-driven-management.com/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Risk-Driven Management (RDM) — Canonical Reference" />
-  <meta property="og:description" content="Risk-Driven Management makes Risk the driver of management: the evidence that justifies commitments, decisions and actions under uncertainty." />
-  <meta property="og:url" content="https://risk-driven-management.com/" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Risk-Driven Management (RDM) — Canonical Reference" />
-  <meta name="twitter:description" content="Official canonical reference page for the Risk-Driven Management framework by Philip J. Linnell." />
-
+  <title>Risk-Driven Management (RDM)</title>
+  <meta name="description" content="Official website for Risk-Driven Management (RDM): a computable management framework for managing commitment under uncertainty, structured for people, software and AI-assisted implementation." />
   <style>
-    :root {
-      color-scheme: light;
-      --green: #2f7d20;
-      --green-dark: #245f19;
-      --blue: #0b5fff;
-      --text: #111;
-      --muted: #444;
-      --line: #e4e4e4;
-      --panel: #fbfbfb;
-      --soft-green: #eef8eb;
-    }
+    :root { --green:#2f7d20; --dark:#222; --muted:#666; --line:#d9d9d9; --soft:#f6f8f5; --softgreen:#eef7ea; }
     * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
-      line-height: 1.56;
-      margin: 0;
-      background: #fff;
-      color: var(--text);
-    }
-    .wrap { max-width: 1040px; margin: 0 auto; padding: 28px 18px 48px; }
-    header { padding: 16px 0 18px; border-bottom: 1px solid var(--line); }
-    h1 { font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.05; margin: 0 0 10px; letter-spacing: -0.035em; }
-    h2 { font-size: 1.35rem; margin: 30px 0 10px; }
-    h3 { font-size: 1.06rem; margin: 0 0 8px; }
-    p { margin: 10px 0; }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    nav { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
-    nav a { border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; font-size: 0.92rem; color: #222; background: #fafafa; }
-    .subtitle { margin: 0; color: #222; font-size: 1.12rem; max-width: 850px; }
-    .strapline { margin: 16px 0 0; padding: 14px 16px; border-left: 5px solid var(--green); background: var(--soft-green); font-size: 1.12rem; }
-    .meta { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
-    .pill { display: inline-block; padding: 4px 10px; border: 1px solid #ddd; border-radius: 999px; font-size: 0.9rem; color: #222; background: #fafafa; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0; }
-    .card, .callout { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; padding: 16px; }
-    .card strong { display: block; margin-bottom: 4px; }
-    .primary { background: var(--green); color: #fff; display: inline-block; padding: 10px 14px; border-radius: 8px; font-weight: 700; margin: 8px 8px 8px 0; }
-    .primary:hover { background: var(--green-dark); text-decoration: none; }
-    .secondary { border: 1px solid var(--line); color: #111; display: inline-block; padding: 9px 13px; border-radius: 8px; font-weight: 700; margin: 8px 8px 8px 0; }
-    .doi, code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      word-break: break-all;
-    }
-    .doi { display: inline-block; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: #fff; margin: 8px 0 6px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
-    th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 9px 8px; vertical-align: top; }
-    th { background: #f3f3f3; }
-    ul { margin: 8px 0 8px 22px; padding: 0; }
-    .model { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 14px 0; }
-    .step { border: 1px solid var(--line); border-radius: 10px; padding: 12px; text-align: center; background: #fff; font-weight: 700; }
-    .arrow { color: var(--green); font-weight: 800; }
-    .small { font-size: 0.92rem; color: var(--muted); }
-    footer { border-top: 1px solid var(--line); margin-top: 34px; padding-top: 14px; color: var(--muted); font-size: 0.92rem; }
-    @media (max-width: 820px) { .grid, .model { grid-template-columns: 1fr; } }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--dark); background:#fff; line-height:1.55; }
+    a { color:var(--green); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 28px 20px 40px; }
+    header { border-bottom: 5px solid var(--green); padding-bottom: 22px; margin-bottom: 28px; }
+    h1 { font-size: 2.45rem; margin: 0 0 8px; letter-spacing: -0.03em; }
+    h2 { font-size: 1.65rem; margin: 34px 0 10px; color:var(--green); }
+    h3 { font-size: 1.15rem; margin: 18px 0 6px; }
+    .subtitle { font-size: 1.15rem; margin: 0; color:#333; max-width: 880px; }
+    .strapline { margin: 16px 0 0; padding: 14px 16px; border-left: 5px solid var(--green); background: var(--softgreen); font-size: 1.08rem; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .pill { border:1px solid var(--line); border-radius:999px; padding:6px 10px; background:#fafafa; font-size:.9rem; }
+    nav { margin-top:16px; display:flex; flex-wrap:wrap; gap:8px; }
+    nav a { border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-size:.92rem; color:#222; background:#fafafa; }
+    section { margin: 28px 0; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .card { border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+    .card strong { display:block; color:var(--green); margin-bottom:4px; }
+    .callout { border:1px solid var(--line); border-left:5px solid var(--green); padding:15px 16px; background:var(--soft); margin:12px 0; }
+    .model { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:18px 0; }
+    .step { background:var(--green); color:#fff; padding:10px 12px; border-radius:8px; font-weight:bold; text-align:center; min-width:145px; }
+    .arrow { font-weight:bold; color:var(--muted); }
+    table { border-collapse:collapse; width:100%; margin:14px 0; }
+    th, td { border:1px solid var(--line); padding:9px; vertical-align:top; }
+    th { background:var(--softgreen); text-align:left; }
+    code { background:#f3f3f3; padding:2px 4px; border-radius:4px; }
+    .small { font-size:.92rem; color:var(--muted); }
+    .doi { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .buttonrow { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .primary, .secondary { display:inline-block; padding:10px 14px; border-radius:8px; font-weight:bold; }
+    .primary { background:var(--green); color:#fff; }
+    .secondary { border:1px solid var(--green); color:var(--green); }
+    footer { border-top:1px solid var(--line); margin-top:40px; padding-top:16px; color:var(--muted); font-size:.9rem; }
+    @media (max-width: 760px) { .grid, .grid.two { grid-template-columns: 1fr; } h1 { font-size: 2rem; } .step { min-width:100%; } .arrow { display:none; } }
   </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": "Risk-Driven Management (RDM) Framework Master Document: Canonical Reference Edition v3.00",
+    "name": "Risk-Driven Management (RDM) Framework Master Document: Version 3.00 Canonical Release",
     "author": { "@type": "Person", "name": "Philip J. Linnell" },
     "publisher": { "@type": "Organization", "name": "Risk-Driven Management Ltd" },
-    "datePublished": "2026-06-23",
-    "identifier": [
-      { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.20810447" },
-      { "@type": "PropertyValue", "propertyID": "SHA-256", "value": "a7952eee2d36c20eef4718c855dd139b04da3ca26884ed188d9677ebdd1b5e4d" }
-    ],
     "url": "https://risk-driven-management.com/",
     "sameAs": "https://doi.org/10.5281/zenodo.20810447",
-    "inLanguage": "en"
+    "inLanguage": "en-GB"
   }
   </script>
 </head>
-
 <body>
   <div class="wrap">
     <header>
       <h1>Risk-Driven Management (RDM)</h1>
-      <p class="subtitle">The canonical public reference for Risk-Driven Management: a management framework for making and fulfilling commitments under conditions of uncertainty.</p>
-      <p class="strapline"><strong>RDM makes Risk the driver of management.</strong> In RDM Risk evidence is not produced after the decision; it is the driver behind the decision.</p>
+      <p class="subtitle">A management framework for making and fulfilling commitments under conditions of uncertainty.</p>
+      <p class="strapline"><strong>RDM makes Risk the driver of management.</strong> Risk evidence is not produced after the decision; it is the justification for the decision.</p>
+      <p class="strapline"><strong>Designed for people and structured for software.</strong> RDM defines a management model that can be applied consistently by managers, supported by software, and increasingly assisted by artificial intelligence.</p>
       <div class="meta">
         <span class="pill"><strong>Originator:</strong> Philip J. Linnell DipM MSc</span>
         <span class="pill"><strong>Company:</strong> Risk-Driven Management Ltd</span>
@@ -110,6 +74,8 @@
         <a href="#why">Why RDM?</a>
         <a href="#framework">Framework</a>
         <a href="#publications">Publications</a>
+        <a href="#technology">Technology and AI</a>
+        <a href="#learn">Learn</a>
         <a href="#status">Status</a>
         <a href="#ip">IP and use</a>
         <a href="#contact">Contact</a>
@@ -124,29 +90,32 @@
     </section>
 
     <section id="framework" aria-labelledby="framework-heading">
-      <h2 id="framework-heading">The RDM framework</h2>
+      <h2 id="framework-heading">The RDM Framework</h2>
       <div class="grid">
         <div class="card"><strong>Commitment</strong>A promise to deliver something specific, at a defined time, in return for something of value.</div>
-        <div class="card"><strong>Threat</strong>An uncertainty that may affect delivery of a Commitment.</div>
+        <div class="card"><strong>Threat</strong>An uncertainty that may affect delivery. Threats exist independently of any specific delivery.</div>
         <div class="card"><strong>Risk</strong>The forecast impact of a Threat assessed against a specific Commitment.</div>
       </div>
       <div class="model" aria-label="RDM process model">
-        <div class="step">Commitment</div>
-        <div class="step">Threat Identification<br><span class="small">TIP</span></div>
-        <div class="step">Threat Assessment<br><span class="small">TAP</span></div>
-        <div class="step">Risk Control<br><span class="small">RCP</span></div>
+        <div class="step">Commitment</div><span class="arrow">→</span>
+        <div class="step">Threat Identification<br><span class="small">TIP</span></div><span class="arrow">→</span>
+        <div class="step">Threat Assessment<br><span class="small">TAP</span></div><span class="arrow">→</span>
+        <div class="step">Risk Control<br><span class="small">RCP</span></div><span class="arrow">→</span>
         <div class="step">Protected Commitment</div>
       </div>
-      <p>RDM is designed to scale across strategy, leadership, operations, programmes, projects, portfolios and individual delivery. Specialist applications include RDSM, RDLM, RDOM, RDPM, RDPgM and RDPfM.</p><p><strong>Version 3.00</strong> formalises Internal Policy as the source of Internal Constraints, clarifies the routing of Warnings to Policy owners, strengthens the symmetry between Delivery Contracts and Internal Policies, and introduces the Commitment Definition Process (RDM-CDP).</p>
-      <p><a class="primary" href="https://doi.org/10.5281/zenodo.20810447" rel="noopener">Open the Framework Master Document</a><a class="secondary" href="https://doi.org/10.5281/zenodo.18315017" rel="noopener">Open the Foundational Paper</a></p>
+      <p>RDM is designed to scale across strategy, leadership, operations, programmes, projects, portfolios and individual delivery. Specialist applications include RDSM, RDLM, RDOM, RDPM, RDPgM and RDPfM.</p>
+      <div class="buttonrow">
+        <a class="primary" href="https://doi.org/10.5281/zenodo.20810447" rel="noopener">Open the Version 3.00 Framework</a>
+        <a class="secondary" href="https://doi.org/10.5281/zenodo.18315017" rel="noopener">Open the Foundational Paper</a>
+      </div>
     </section>
 
     <section id="publications" aria-labelledby="publications-heading">
       <h2 id="publications-heading">Canonical publications</h2>
       <div class="callout">
-        <h3>Framework Master Document — Canonical Reference Edition v3.00</h3>
+        <h3>Framework Master Document - Version 3.00 Canonical Release</h3>
         <div class="doi">https://doi.org/10.5281/zenodo.20810447</div>
-        <p class="small">Suggested citation: Linnell, P.J. (2026). <em>Risk-Driven Management (RDM) Framework Master Document: Canonical Reference Edition v3.00</em>. Risk-Driven Management Ltd. DOI: 10.5281/zenodo.20810447</p>
+        <p class="small">Suggested citation: Linnell, P.J. (2026). <em>Risk-Driven Management (RDM) Framework Master Document (Version 3.00, Canonical Release)</em>. RDM-FMD-3.00. Risk-Driven Management Ltd. DOI: 10.5281/zenodo.20810447</p>
       </div>
       <div class="callout">
         <h3>Foundational RDM Paper</h3>
@@ -155,37 +124,47 @@
       </div>
     </section>
 
+    <section id="technology" aria-labelledby="technology-heading">
+      <h2 id="technology-heading">Technology and AI</h2>
+      <p>RDM is being developed as a computable management framework. Its core entities, relationships, operating rules, registers and state transitions are intended to be explicit enough to support consistent implementation by people, software and AI-assisted tools.</p>
+      <div class="grid two">
+        <div class="card"><strong>Structured for software</strong>RDM can be represented through objects such as Commitments, Delivery Contracts, Policies, Internal Constraints, Threats, Risks, Responses, Warnings and Issues.</div>
+        <div class="card"><strong>AI-assisted management</strong>RDM can provide a governed context in which AI assists with TIP, draft Risk generation, TAP preparation, evidence checking, reporting and review.</div>
+      </div>
+      <p>RDM does not assume that AI replaces management judgement. Instead, it provides a structured governance model within which AI can help identify uncertainty, apply organisational Policies, generate draft Risks, and support managers in making better evidenced decisions.</p>
+    </section>
+
+    <section id="learn" aria-labelledby="learn-heading">
+      <h2 id="learn-heading">Learning and practical materials</h2>
+      <p>The Canonical Framework defines the RDM standard. Practical guides, workbooks, templates and future software material are being developed separately to help managers apply the Framework.</p>
+      <ul>
+        <li><strong>Quick Start Guide</strong> - a short practical introduction to RDM for managers.</li>
+        <li><strong>Implementation Workbook</strong> - a worked path for applying RDM to a real commitment.</li>
+        <li><strong>Delivering Manager's Handbook</strong> - operational guidance for running RDM day to day.</li>
+        <li><strong>RDM Data Model</strong> - the emerging structure for software and reference implementation.</li>
+        <li><strong>Artificial Intelligence and RDM</strong> - how RDM can provide a governance model for AI-assisted management.</li>
+      </ul>
+    </section>
+
     <section id="status" aria-labelledby="status-heading">
       <h2 id="status-heading">Current status of RDM</h2>
       <table>
         <thead><tr><th>Item</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>Framework Master Document</td><td>Published on Zenodo as Canonical Reference Edition v3.00</td></tr>
+          <tr><td>Framework Master Document</td><td>Version 3.00 Canonical Release published on Zenodo</td></tr>
           <tr><td>Canonical DOI</td><td><span class="doi">10.5281/zenodo.20810447</span></td></tr>
-          <tr><td>SHA-256 verification</td><td><code>a7952eee2d36c20eef4718c855dd139b04da3ca26884ed188d9677ebdd1b5e4d</code></td></tr>
           <tr><td>Foundational Paper</td><td>Published on Zenodo: DOI 10.5281/zenodo.18315017</td></tr>
           <tr><td>Company</td><td>Risk-Driven Management Ltd, UK Company No. 06143397</td></tr>
           <tr><td>UK trade mark</td><td>Application filed: UK00004400739</td></tr>
+          <tr><td>Practical publications</td><td>Quick Start Guide, Implementation Workbook, AI Overview and Data Model are in development</td></tr>
         </tbody>
       </table>
     </section>
 
     <section id="ip" aria-labelledby="ip-heading">
       <h2 id="ip-heading">Intellectual property, licence and permitted use</h2>
-      <p>Risk-Driven Management (RDM), the RDM Framework, and the associated concepts, models, terminology, diagrams and processes are the intellectual property of Philip J. Linnell and are licensed to Risk-Driven Management Ltd.</p>
-      <p>The Framework Master Document is published as the canonical public reference edition of the framework. Copyright © Philip J. Linnell 2026. Licensed to Risk-Driven Management Ltd. All rights reserved. It may be cited and referenced, but commercial reuse, adaptation, derivative publication and instructional exploitation require permission.</p>
-      <p>Applied materials, training, software tools, consultancy methods and derivative publications are managed separately and may be made available under controlled, instructional or contractual terms.</p>
-    </section>
-
-    <section id="services" aria-labelledby="services-heading">
-      <h2 id="services-heading">Future services</h2>
-      <p>Risk-Driven Management Ltd is developing practical materials to support adoption of RDM, including executive briefings, practitioner guides, training material, consultancy support and software tools.</p>
-      <ul>
-        <li>Executive introduction to RDM</li>
-        <li>Risk-Driven Project Management guide</li>
-        <li>RDM training and workshops</li>
-        <li>RDM software and register model</li>
-      </ul>
+      <p>Risk-Driven Management (RDM), the RDM Framework, and the associated concepts, models, terminology, diagrams and processes are the intellectual property of Philip J. Linnell and are licensed to Risk-Driven Management Ltd for publication and commercial exploitation.</p>
+      <p>The Framework Master Document may be studied, cited and referenced for personal study, academic discussion, review and non-commercial reference, provided appropriate attribution is given. Applied materials, training, software tools, consultancy methods and derivative publications are managed separately.</p>
     </section>
 
     <section id="contact" aria-labelledby="contact-heading">
@@ -198,13 +177,10 @@
     </section>
 
     <footer>
-      <p>© <span id="year"></span> Philip J. Linnell. Licensed to Risk-Driven Management Ltd. All rights reserved.</p>
+      <p>© <span id="year"></span> Philip J. Linnell and Risk-Driven Management Ltd. All rights reserved.</p>
       <p class="small">“Risk-Driven Management” and “RDM” are used as identifiers for the author’s framework. UK trade mark application UK00004400739 pending.</p>
     </footer>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
